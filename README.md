@@ -26,6 +26,8 @@ _tested with NodeJS version 6.10.2 LTS_
     -   `options.application` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** name of an application (optional, default `'application'`)
     -   `options.appInstance` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** name of an application instance (optional, default `'_definst_'`)
     -   `options.mediaCasterType` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** caster type (optional, default `'rtp'`)
+     -   `options.username` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** username (optional, default `''`)
+      -   `options.mediaCasterType` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** password (optional, default `''`)
 
 **Examples**
 
@@ -36,7 +38,9 @@ wowza = new Wowza({
 	streamFile: 'ipCamera.stream', // default is 'myStream.stream'
 	application: 'webrtc',         // default is 'live'
 	appIstance: '_definst_',       // default is '_definst_'
-	mediaCasterType: 'rtp'         // default is 'rtp'
+	mediaCasterType: 'rtp',         // default is 'rtp'
+	username: '' ,        // default is 'rtp'
+	password: ''         // default is 'rtp'
 });
 wowza.someWowzaMethod(); // now you can use the JS wowza API.
 ```
